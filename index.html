@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Appointment Logger</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <h1>Appointmentor</h1>
+
+
+<h2 id="username"></h2>
+
+<div id="welcome-container" class="container">
+  <form id="welcome-form">
+    <input type="text" id="welcome-title" placeholder="Your name" required>
+    <input type="text" id="welcome-meetings-title" placeholder="Your Meetings title" required>
+    <div>
+      <input type="submit" value="Submit">
+    </div>
+   
+  </form>
+</div>
+
+<div id="meetings-container" class="container hidden">
+  <h2 id="meeting-list-title"></h2>
+
+  <form id="meeting-form">
+    <input type="text" id="meeting-title" placeholder="Meeting Title" required>
+    <input type="date" id="meeting-date" required>
+    <input type="time" id="meeting-time" required>
+    <input type="submit" value="Schedule Meeting">
+  </form>
+
+  <div id="meeting-list"></div>
+</div>
+  
+<script src="main.js"></script>
+</body>
+</html>
